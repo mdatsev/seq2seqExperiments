@@ -12,3 +12,6 @@ def wiki_extract(page):
     words = [nltk.word_tokenize(s) for s in sentences]
     filtered = [[w for w in s if re.search(r'\w+', w)] for s in words]
     return filtered
+
+def wiki_extract(page_name):
+    return wiki_extract(wikipedia.page(page_name))
