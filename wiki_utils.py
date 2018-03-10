@@ -13,5 +13,5 @@ def wiki_extract(page):
     filtered = [[w for w in s if re.search(r'\w+', w)] for s in words]
     return filtered
 
-def wiki_extract(page_name):
+def wiki_extract_page(page_name):
     return wiki_extract(wikipedia.page(page_name))
