@@ -1,7 +1,7 @@
 wikipedia
 ntlk && python nltk.download('punkt')
 imdpie
-geminism
+gemsim
 tensorflow
 
 
